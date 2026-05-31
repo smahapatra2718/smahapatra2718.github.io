@@ -11,6 +11,16 @@
     
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      .morse::before {
+        content: attr(data-morse);
+        letter-spacing: 1px;
+      }
+      .morse:hover::before {
+        content: attr(data-text);
+        letter-spacing: normal;
+      }
+    </style>
   </head>
 
   <body>
@@ -23,9 +33,13 @@
                 <p class="name" style="text-align: center;">
                   Samarth Mahapatra
                 </p>
-                <p style="text-align:center;font-size:5px;color:#888;">
-                  .-..-. - .... . / -- --- ... - / -.. .- -. --. . .-. --- ..- ... / .--. .... .-. .- ... . / .. -. / - .... . / .-.. .- -. --. ..- .- --. . / .. ... --..-- / .----. .-- . .----. ...- . / .- .-.. .-- .- -.-- ... / -.. --- -. . / .. - / - .... .. ... / .-- .- -.-- .-.-.- .----. .-..-. / --. .-. .- -.-. . / .... --- .--. .--. . .-.
+                <p style="text-align:center;font-size:10px;color:#888;">
+                  <span class="morse" 
+                        data-morse=" .-..-. - .... . / -- --- ... - / -.. .- -. --. . .-. --- ..- ... / .--. .... .-. .- ... . / .. -. / - .... . / .-.. .- -. --. ..- .- --. . / .. ... --..-- / .----. .-- . .----. ...- . / .- .-.. .-- .- -.-- ... / -.. --- -. . / .. - / - .... .. ... / .-- .- -.-- .-.-.- .----. .-..-. / --. .-. .- -.-. . / .... --- .--. .--. . .-. " 
+                        data-text="&quot;The most dangerous phrase in the language is, 'We've always done it this way.'&quot; - Grace Hopper">
+                  </span>
                 </p>
+                
                 <p>
                   I am a first-year undergraduate studying EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a> and am a researcher at <a href="https://bair.berkeley.edu/">BAIR</a> in the Kanazawa AI Research lab where I'm advised by <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>.
                   <!-- I work closely with and am mentored by <a href="https://kerrj.github.io/">Justin Kerr</a>, <a href="https://kushtimusprime.github.io/">Kush Hari</a> and <a href="https://jiahuilei.com/">Jiahui Lei</a>. -->
